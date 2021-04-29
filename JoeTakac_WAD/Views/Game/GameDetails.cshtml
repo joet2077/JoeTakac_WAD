@@ -1,0 +1,20 @@
+﻿@model JoeTakac_WAD.Models.Game
+
+<section>
+
+    <div class="mainImage">
+        <img src="~/img/@Model.Image" width="200" height="300" alt="@Model.Title" />
+    </div>
+
+    <div class="filmInfo">
+        <h2>@Model.Title</h2>
+        <p>Developer: @Model.Developer</p>
+        <p>Publisher: @Model.Publisher</p>
+        <p>Release Date: @Model.ReleaseDate</p>
+        <p>Genre: @Model.Genre</p>
+        <p>Age Rating: @Model.Rating</p>
+        <p>Platforms: @Model.Platforms</p>
+
+    </div>
+
+</section>

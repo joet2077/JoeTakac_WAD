@@ -1,0 +1,128 @@
+﻿@model JoeTakac_WAD.Models.Game
+
+<form method="post">
+    <input asp-for="GameID" hidden />
+    <div class="border p-3">
+
+        <div class="form-group row">
+            <h2 class="text-info pl-3">Delete Game</h2>
+        </div>
+        <div class="row">
+            <div class="col-8">
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="Title"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="Title" disabled class="form-control" />
+                    </div>
+
+                </div>
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="Developer"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="Developer" disabled class="form-control" />
+                    </div>
+
+                </div>
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="Publisher"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="Publisher" disabled class="form-control" />
+                    </div>
+
+                </div>
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="ReleaseDate"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="ReleaseDate" disabled class="form-control" />
+                    </div>
+
+                </div>
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="Genre"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="Genre" disabled class="form-control" />
+                    </div>
+
+                </div>
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="Engine"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="Engine" disabled class="form-control" />
+                    </div>
+
+                </div>
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="Rating"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="Rating" disabled class="form-control" />
+                    </div>
+
+                </div>
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="Platforms"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="Platforms" disabled class="form-control" />
+                    </div>
+
+                </div>
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="Requirements"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="Requirements" disabled class="form-control" />
+                    </div>
+
+                </div>
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="Image"></label>
+                    </div>
+                    <div class="col-8">
+                        IMAGE INPUT HERE
+                    </div>
+
+                </div>
+
+                <!-- Buttons -->
+                <div class="form-group row">
+                    <div class="col-8 offset-4 row">
+                        <div class="col">
+                            <input type="submit" class="btn btn-danger w-100" value="Delete" />
+                        </div>
+                        <div class="col">
+                            <a asp-action="Index" class="btn btn-info w-100">Back</a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</form>
+
+@section Scripts{
+
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+
+}
